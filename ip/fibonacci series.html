@@ -1,0 +1,28 @@
+<script>
+x=10
+console.log(x++);
+console.log(++x);
+console.log((x++)+(++x));
+</script>
+
+<script>
+let n = 10; 
+let fibSeries = [0, 1]; 
+
+for (let i = 2; i < n; i++) {
+    fibSeries[i] = fibSeries[i - 1] + fibSeries[i - 2];
+}
+
+console.log("Fibonacci series:");
+for (let i = 0; i < fibSeries.length; i++) {
+    console.log(fibSeries[i]);
+}
+
+</script>
+
+<script>
+for (let i=1; i<=20; i++) {
+    if (i==13) continue;
+    console.log(`Floor No. ${i}`)
+}
+</script>

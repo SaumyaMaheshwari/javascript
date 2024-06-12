@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter and Color Change</title>
+</head>
+<body id="body">
+    <h1 id="counter"></h1>
+    <script>
+        cnt = 0;
+        setInterval(function() {
+            document.getElementById('counter').innerHTML = cnt++;
+        }, 1000); 
+    </script>
+    <script>
+        color = 'red';
+        setInterval(function() {
+            if (color == 'red') {
+                color = 'green';
+                document.getElementById('body').style.backgroundColor = color;
+            } else if (color == 'green') {
+                color = 'blue';
+                document.getElementById('body').style.backgroundColor = color;
+            } else if (color == 'blue') {
+                color = 'red';
+                document.getElementById('body').style.backgroundColor = color;
+            }
+        }, 1000); 
+    </script>
+</body>
+</html>

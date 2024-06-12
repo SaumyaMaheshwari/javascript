@@ -1,0 +1,77 @@
+<script>
+    function printmsg(name){
+        console.log(`Hello${name}`);
+    }
+    printmsg('Ram')
+    printmsg('Shyam')
+    printmsg('haha')
+</script>
+
+<script>
+    function Add(number){
+        let result=0
+        result=num1+num2
+        console.log(`Addition of these numbers is ${result}`)
+    }
+    num1=Number(prompt("num1:"))
+    num2=Number(prompt("num2:"))
+    Add(num1,num2);
+</script>
+
+<script>
+    function Square(Number){
+        let result=0
+        result=num*num
+        console.log(`Square of these numbers is ${result} `)
+    }
+    num=Number(prompt("Enter a number:"))
+    Square(num);
+</script>
+
+
+<script>
+    function sum(x,y) {
+        return x+y
+    }
+    s=sum(5,6)
+    console.log(s);
+    console.log(sum(7,8));
+    console.log(sum(sum(1,2), sum(3,4)));
+</script>
+
+<script>
+    function Printstr(num, str){
+        for(let i=0;i<=num;i++){
+            console.log(str);
+        }
+
+    }
+    num=Number(prompt("Enter the number:"))
+    str=Number(prompt("Enter the String:"))
+    Printstr(num,str);
+</script>
+
+<script>
+        function checkAge(members)
+        {
+            for(let i =0;i<members.length;i++)
+            {
+                if(members[i]['age']>=21)
+                console.log(`${members[i]['name'] } allowed to drink`)
+
+                else
+                console.log(`${members[i]['name'] } not allowed to drink`)
+
+            }
+
+        }
+        members=[
+            {'name': 'Vedant', 'age': 17},
+            {'name': 'nah', 'age': 19},
+            {'name': 'waah', 'age': 25},
+            {'name': 'oki', 'age': 20},
+            {'name': 'lol', 'age': 75}
+        ]
+        checkAge(members)
+
+</script>

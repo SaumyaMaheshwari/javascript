@@ -1,0 +1,31 @@
+<script>
+let attempts
+let jackpot
+jackpot_number=23
+level=Number(prompt("choose level (1: Easy, 2: Medium, 3: Difficult):"))
+if (level == 1) {
+        attempts = 20;
+    } else if (level == 2) {
+        attempts = 10;
+    } else if (level == 3) {
+        attempts = 5;
+    } else {
+        console.log("Invalid level!");
+    }
+console.log("Welcome to the Jackpot Guessing Game!");
+console.log(`You have ${attempts} attempts to guess the jackpot number.`);
+for (let attempt = 1; attempt <= attempts; attempt++) {
+    guess = Number(prompt("Enter your guess:"));
+    if (guess === jackpot_number) {
+        console.log(`Congratulations! You've guessed the jackpot number ${jackpot_number} correctly!`);
+        break;
+    } else if (guess < jackpot_number) {
+        console.log("low! Try going higher.");
+    } else {
+        console.log("high! Try going lower.");
+    }
+    if (attempt !== attempts) {
+        console.log(`You have ${attempts - attempt} attempts left.`);
+    }
+}
+</script>

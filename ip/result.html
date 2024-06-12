@@ -1,0 +1,37 @@
+<script>
+    English=Number(prompt("english marks:"))
+    Math=Number(prompt("math marks:"))
+    Physics=Number(prompt("physics marks:"))
+    Chem=Number(prompt("chem marks:"))
+    Dsa=Number(prompt("dsa marks:"))
+
+    if (English>=0 && English<=100
+        && Math>=0 && Math<=100
+        && Physics>=0 && Physics<=100
+        && Chem>=0 && Chem<=100
+        && Dsa>=0 && Dsa<=100 
+    ){
+    total=English+Math+Physics+Chem+Dsa
+    percentage=(total/500)*100
+    console.log("Total:"+total,",","Percentage:"+percentage)
+    } else{
+        console.log("Invalid marks entered")
+    }
+    if (percentage>=40){
+        console.log(`pass`)
+    } else {
+        console.log(`fail`)
+    }
+    if ("pass" && (percentage>=70)){
+        console.log(`A grade`)
+    } else if ("pass" && (percentage>=50) && (percentage<70)){
+        console.log(`B grade`)
+    } else if ("pass" && (percentage>=40) && (percentage<50)){
+        console.log(`C grade`)
+    }
+    if (English >= 40 && Math >= 40 && Physics >= 40 && Chem >= 40 && Dsa >= 40){
+        console.log(`All subjects passed`)
+    } else {
+        console.log(`Failed in one or more subjects`)
+    }
+</script>

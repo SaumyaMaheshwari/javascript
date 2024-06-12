@@ -1,0 +1,58 @@
+<body id="body"></body>
+<script>
+    cnt=0
+    color='red'
+    setInterval(function(){
+        if(color == 'red')
+        {
+            color='green'
+            document.getElementById('body').style.backgroundColor = color
+        }
+        else if(color=='green')
+        {
+            color='blue'
+            document.getElementById('body').style.backgroundColor = color
+        }
+        else if(color=='blue'){
+            color='red'
+            document.getElementById('body').style.backgroundColor = color
+
+        }
+    } ,1000)
+    
+    
+</script>
+
+
+
+
+
+<body id="body">
+</body>
+<button onclick="changetoBlue()">
+    click me
+</button>
+<button onclick="changetopurple()">
+    nope click me
+</button><button onclick="changetored()">
+     NO CLICK ME
+</button>
+<script>
+    function changetoBlue()
+    {
+        document.getElementById('body').style.backgroundColor = 'blue';
+        
+    }
+    function changetopurple()
+    {
+        document.getElementById('body').style.backgroundColor = 'purple';
+        
+    }function changetored()
+    {
+        document.getElementById('body').style.backgroundColor = 'red';
+        
+    }
+
+
+    
+</script>

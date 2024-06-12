@@ -1,0 +1,48 @@
+<head>
+    <body>
+        <h1 id="kuchbhi">Hello World</h1>
+    </body>
+    <script>
+        x=document.getElementById("kuchbhi").innerHTML
+        alert(x)
+        document.getElementById("kuchbhi").innerHTML="Namaste Bharat"
+    </script>
+</head>
+
+<h1 id="kuchbhi">Hello World</h1>
+<button onclick="changeText()">Click to change text</button>
+
+<script>
+    function changeText(){
+    x=document.getElementById("kuchbhi").innerHTML
+    alert(x)
+    document.getElementById("kuchbhi").innerHTML="Namaste Bharat"
+    }
+</script>
+
+<input type="text" is="num" values="7">
+<button onclick="changeHtml()">Click</button>
+<h1 id="result"></h1>
+
+<script>
+    function changeHtml(){
+        x=document.getElementById("num").value
+        alert(x)
+        document.getElementById("result").innerHTML=x
+
+    }
+</script>
+
+
+<input type="text" is="num" values="7">
+<button onclick="changeHtml()">Click</button>
+<h1 id="result"></h1>
+
+<script>
+    function getSqr(){
+        x=document.getElementById("num").value
+        output='Square of ${x} is ${x*x}'
+        document.getElementById("result").innerHTML=output
+
+    }
+</script>

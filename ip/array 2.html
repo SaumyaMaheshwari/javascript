@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head><script>
+    rec=['Shailesh nagar',22,'Shailesh nagar']
+    rec={
+        'name': 'Shailesh nagar',
+        'age': 22,
+        'city': 'Shailesh nagar',
+        'location': {
+            'lat':123,
+            'long': 456
+        },
+        'subject': ['python','javascript']
+    }
+    // where age is the key and 22 is value
+    //JSON: key:value pair
+    console.log(rec['age'])
+    console.log(rec['city'])
+    console.log(rec['location']['lat'])
+    console.log(rec['subject'][1])
+    </script>
+    
+    
+    <script>
+    emps=[
+        {'name':'Ram','salary': 25000},
+        {'name':'Shyam','salary': 50000},
+        {'name':'Baburao','salary': 35000}
+    ]
+    let sum=0
+    for (let i=0; i<emps.length; i++){
+        console.log(`Hello ${emps[i]['name']} your salary is ${emps[i]['salary']}`)
+        sum+=emps[i]['salary']
+        average=sum/emps.length
+    }
+    console.log(`total salary is ${sum}`)
+    console.log(`average salary is ${average}`)
+    </script>
+
+    <script>
+    emps=[
+        {'name':'Ram','salary': 50000},
+        {'name':'Shyam','salary': 50000},
+        {'name':'Baburao','salary': 35000}
+    ]
+    let highest = emps[0]['salary'];
+    for (i = 1; i < emps.length; i++) {
+      if (emps[i]['salary'] > highest) {
+        highest = emps[i]['salary'];
+      }
+    }
+    console.log(`Highest salary in the employees: ${highest}`);
+    for (let i=0; i<emps.length; i++){
+        if (emps[i]['salary']==highest)
+        console.log(`Hello ${emps[i]['name']} you have highest salary ${highest}`);
+    }
+    </script>
+</body>
+</html>
+
+
+
+
