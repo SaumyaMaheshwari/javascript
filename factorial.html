@@ -1,0 +1,14 @@
+<input type="text" name="factorial" id="number">
+<button onclick="getFactorial()">factorial dikha</button>
+<h1 id="result"></h1>
+<script>
+    function getFactorial(){
+        let n=Number(document.getElementById("number").value);
+        let fact=1
+        for (let i=n;i>1;i--){
+            fact*=i;
+        }
+        let output=`factorial of the number ${n} is: <br> ${fact}`;
+        document.getElementById('result').innerHTML=output;
+    }
+</script>

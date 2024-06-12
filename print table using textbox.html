@@ -1,0 +1,16 @@
+<input type="text" name="table " id="table">
+<button onclick="getTable()">Print Table</button>
+<h1 id="result"></h1>
+<script>
+    function getTable(){
+        let n=Number(document.getElementById("table").value);
+        let table=" "
+        for (let i=1;i<=10;i++){
+            let multi=n*i;
+            table+=`${n} * ${i} = ${multi} <br>`;
+
+        }
+        let output=`table of the number ${n} is: <br> ${table}`;
+        document.getElementById('result').innerHTML=output;
+    }
+</script>
